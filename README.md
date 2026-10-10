@@ -1,16 +1,19 @@
 # abomb.com
 
-A restoration of Matt Small's portfolio site, abomb.com, as it looked around 2003–2005: game art, CG work, illustration, and animation.
+Coming soon page for abomb.com: the original abomb family silhouette, redrawn as SVG. Hover (or tap) and it detonates.
 
-The pages and images were recovered from the [Internet Archive's Wayback Machine](https://web.archive.org/web/2005/http://abomb.com/) and are served as-is, frames, Dreamweaver rollover scripts and all.
+Everything is in `index.html` — inline SVG, CSS transitions, and a few lines of JavaScript. No build step, no dependencies.
 
-## Not recovered
+- **Mouse:** hover detonates; moving away rewinds it.
+- **Touch / keyboard:** tap, Enter or Space toggles it.
+- **Reduced motion:** the flash, shake and growth are replaced by a plain crossfade.
 
-The archive never captured these files, so their pages fall back to the small thumbnail:
+The family, cloud and shadow shapes were traced from the original 2003 rollover GIFs.
 
-- `illus/eddie.jpg`, `illus/rocket.jpg`, `game/lotr_fangtex.jpg`
-- The QuickTime movies in `movie/` (`jt.mov`, `rosie.mov`, `kr200.mov`, `mime.mov`, `bladegirl.mov`)
+## The old site
 
-Dropping an original file back in at its path restores it; no HTML changes are needed.
+The restored circa 2003–2005 site, recovered from the Wayback Machine, is preserved on the [`archive`](https://github.com/smaulio/abomb/tree/archive) branch and the `archive-2005` tag. To browse it locally:
 
-`gfx/cg_down.gif` was also missing and has been recreated from `gfx/cg_mouse.gif`.
+```bash
+git worktree add ../abomb-2005 archive-2005
+```
